@@ -31,43 +31,31 @@ Example request: /api/delete-app/1/
 
 Setup Instructions
 1. Clone the repository
-bash
-Copy code
-git clone https://github.com/yourusername/yourproject.git
-cd yourproject
+   - git clone https://github.com/yourusername/yourproject.git
+   - cd yourproject
+   - 
 2. Install Dependencies
-bash
-Copy code
-pip install -r requirements.txt
+   - pip install -r requirements.txt
+     
 3. Setup Database
 Run the following commands to apply migrations and set up the database:
-
-bash
-Copy code
-python manage.py makemigrations
-python manage.py migrate
+   - python manage.py makemigrations
+   - python manage.py migrate
+     
 4. Load Sample Data
 If a sample_data.json file is provided, load sample data using:
-
-bash
-Copy code
-python manage.py loaddata sample_data.json
-5. Run the Server
-Start the Django development server:
-
-bash
-Copy code
-python manage.py runserver
+   - python manage.py loaddata sample_data.json
+     
+5. Run the Server. Start the Django development server:
+   - python manage.py runserver
 The server will be available at http://127.0.0.1:8000/.
 
 6. Testing the API
 Use a tool like Postman or cURL to test the API.
 
-**Example cURL command to add an app:**
+Example cURL command to add an app:
 
-**bash**
-
-## curl -X POST -H "Content-Type: application/json" -d '{"app_name": "FitTrack", "version": "1.2", "description": "A fitness tracking app"}' http://127.0.0.1:8000/api/add-app/
+**curl -X POST -H "Content-Type: application/json" -d '{"app_name": "FitTrack", "version": "1.2", "description": "A fitness tracking app"}' http://127.0.0.1:8000/api/add-app/**
 
 **Database Schema**
 The database schema includes the following fields in the App table:
