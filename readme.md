@@ -33,7 +33,7 @@ Setup Instructions
 1. Clone the repository
    - git clone https://github.com/yourusername/yourproject.git
    - cd yourproject
-   - 
+     
 2. Install Dependencies
    - pip install -r requirements.txt
      
@@ -58,6 +58,7 @@ Example cURL command to add an app:
 **curl -X POST -H "Content-Type: application/json" -d '{"app_name": "FitTrack", "version": "1.2", "description": "A fitness tracking app"}' http://127.0.0.1:8000/api/add-app/**
 
 **Database Schema**
+
 The database schema includes the following fields in the App table:
 
  1. id: Primary key (auto-incremented).
